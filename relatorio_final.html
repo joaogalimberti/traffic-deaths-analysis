@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>ANÁLISE FINAL</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="relatorio_final_files/libs/clipboard/clipboard.min.js"></script>
+<script src="relatorio_final_files/libs/quarto-html/quarto.js"></script>
+<script src="relatorio_final_files/libs/quarto-html/popper.min.js"></script>
+<script src="relatorio_final_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="relatorio_final_files/libs/quarto-html/anchor.min.js"></script>
+<link href="relatorio_final_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="relatorio_final_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="relatorio_final_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="relatorio_final_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="relatorio_final_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="relatorio_final_files/libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="relatorio_final_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<script src="relatorio_final_files/libs/plotly-binding-4.10.4/plotly.js"></script>
+
+<script src="relatorio_final_files/libs/typedarray-0.1/typedarray.min.js"></script>
+
+<script src="relatorio_final_files/libs/jquery-3.5.1/jquery.min.js"></script>
+
+<link href="relatorio_final_files/libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+
+<script src="relatorio_final_files/libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
+<link href="relatorio_final_files/libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+
+<script src="relatorio_final_files/libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">ANÁLISE FINAL</h1>
+            <p class="subtitle lead">Análise dos Óbitos por Acidentes de Trânsito no Espírito Santo – SIM 2024</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#introdução" id="toc-introdução" class="nav-link active" data-scroll-target="#introdução">Introdução</a>
+  <ul class="collapse">
+  <li><a href="#metodologia" id="toc-metodologia" class="nav-link" data-scroll-target="#metodologia">Metodologia</a></li>
+  <li><a href="#preparação-dos-dados-para-análise" id="toc-preparação-dos-dados-para-análise" class="nav-link" data-scroll-target="#preparação-dos-dados-para-análise">Preparação dos Dados para Análise</a></li>
+  <li><a href="#análise-e-discussão-dos-resultados" id="toc-análise-e-discussão-dos-resultados" class="nav-link" data-scroll-target="#análise-e-discussão-dos-resultados">Análise e Discussão dos Resultados</a></li>
+  <li><a href="#insights-da-análise-de-dados-e-do-projeto-como-um-todo" id="toc-insights-da-análise-de-dados-e-do-projeto-como-um-todo" class="nav-link" data-scroll-target="#insights-da-análise-de-dados-e-do-projeto-como-um-todo">Insights Da Análise de Dados e Do Projeto como um Todo</a></li>
+  <li><a href="#considerações-finais" id="toc-considerações-finais" class="nav-link" data-scroll-target="#considerações-finais">Considerações Finais</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<section id="introdução" class="level1">
+<h1>Introdução</h1>
+<p>Este relatório apresenta uma análise dos óbitos por acidentes de trânsito ocorridos no estado do Espírito Santo no ano de 2024, com base nos dados do Sistema de Informações sobre Mortalidade (SIM). O objetivo é explorar padrões de mortalidade relacionados a esses eventos, identificar perfis das vítimas e avaliar possíveis fatores associados aos acidentes, utilizando técnicas de visualização e análise de dados.</p>
+<p>Este projeto integra o trabalho final do módulo 2 da Capacitação em Análise de Dados para Qualificação em Gestão da Saúde, promovida pelo Instituto Capixaba de Ensino, Pesquisa e Inovação em Saúde (ICEPi).</p>
+<p>A ocorrência de mortes por acidentes de trânsito constitui um dos maiores desafios da saúde pública no Brasil, principalmente pela sua frequência entre pessoas jovens e economicamente ativas. Estes óbitos, frequentemente evitáveis, não apenas impactam famílias e comunidades, como também geram custos significativos para o sistema de saúde. Este relatório foca na análise de dados de mortalidade por causas externas, mais especificamente os acidentes de transporte terrestre, buscando compreender o cenário no Espírito Santo e subsidiar ações voltadas à prevenção e redução desses eventos.</p>
+<p>A análise foi realizada utilizando a linguagem de programação R e pacotes de visualização de dados, como o <code>ggplot2</code>, com o objetivo de explorar as principais informações contidas no dataset do SIM 2024 para o estado do Espírito Santo. Por meio de gráficos e interpretações, busca-se evidenciar as principais características desses óbitos, contribuindo para o desenvolvimento de estratégias de vigilância e segurança no trânsito.</p>
+<section id="metodologia" class="level2">
+<h2 class="anchored" data-anchor-id="metodologia">Metodologia</h2>
+<p>Para a realização deste relatório, foi utilizado um conjunto de dados do Sistema de Informação sobre Mortalidade (SIM) referentes ao ano de 2024, focando nos registros de óbitos relacionados a acidentes de trânsito no estado do Espírito Santo. A análise foi conduzida utilizando a linguagem de programação R, que se destaca pela capacidade de manipulação, análise e visualização de dados em projetos de saúde pública.</p>
+<p>É importante destacar que os dados utilizados para esta análise estão disponíveis apenas até o mês de agosto de 2024, uma vez que o banco de dados está em processo de tratamento e encerramento para a atualização final dos registros. Os dados completos para o ano de 2024 ainda não estão disponíveis no OpenDataSUS.</p>
+<p>As etapas do processo de análise incluíram:</p>
+<ol type="1">
+<li><p><strong>Carregamento e Limpeza dos Dados:</strong> Os dados foram importados para o R a partir de um arquivo CSV baixado do site OpenDataSUS através do link: <a href="https://opendatasus.saude.gov.br/dataset/sim/resource/767ebb92-558c-493b-9cb4-af7b68beaa3f">CSV para Download</a>. Foi realizado um filtro para selecionar os registros referentes ao estado do Espírito Santo e, especificamente, para os óbitos causados por acidentes de trânsito.</p></li>
+<li><p><strong>Análise Exploratória dos Dados:</strong> Utilizou-se uma abordagem descritiva para compreender a estrutura dos dados e identificar padrões iniciais. Foram aplicadas funções estatísticas para determinar a frequência de óbitos atribuídos a acidentes de trânsito, possibilitando a visualização de tendências temporais e a identificação dos principais fatores associados aos eventos, como a idade das vítimas, a localização e o tipo de acidente.</p></li>
+<li><p><strong>Visualização dos Dados:</strong> Para a análise gráfica, o pacote ggplot2 foi empregado na criação de diversos gráficos. Entre eles:</p></li>
+</ol>
+<ul>
+<li><p>Gráficos de Linhas e Barras: para a visualização da distribuição temporal dos óbitos ao longo do ano, identificando possíveis picos sazonais ou mensais, e verificando a distribuição dos óbitos até o mês de agosto.</p></li>
+<li><p>Mapas Temáticos: para representar a distribuição geográfica dos registros no Espírito Santo, contribuindo para a identificação de áreas com maior incidência dos acidentes de trânsito.</p></li>
+<li><p>Comparações entre Subgrupos: onde se analisou, por exemplo, a incidência de óbitos por acidentes de trânsito em diferentes estados civis, sempre que esses dados estivessem disponíveis.</p></li>
+</ul>
+<ol start="4" type="1">
+<li><strong>Interpretação dos Resultados:</strong> A partir das visualizações e da análise estatística realizada, os resultados foram interpretados à luz da literatura sobre segurança no trânsito e saúde pública. A análise destacou as principais características dos acidentes de trânsito no Espírito Santo e buscou identificar padrões que possam orientar políticas públicas de prevenção, como a implementação de campanhas educativas, melhorias na infraestrutura viária e políticas de fiscalização.</li>
+</ol>
+<p>Essa abordagem metodológica permitiu uma análise robusta dos dados de mortalidade por acidentes de trânsito, fornecendo subsídios para a proposição de intervenções que visem melhorar a segurança no trânsito e reduzir os óbitos evitáveis no estado do Espírito Santo.</p>
+</section>
+<section id="preparação-dos-dados-para-análise" class="level2">
+<h2 class="anchored" data-anchor-id="preparação-dos-dados-para-análise">Preparação dos Dados para Análise</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Carregar pacotes necessários</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(geobr)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Importar o dataset</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>dados <span class="ot">&lt;-</span> <span class="fu">read_delim</span>(<span class="st">"DO24OPEN.csv"</span>, <span class="at">delim =</span> <span class="st">";"</span>, <span class="at">escape_double =</span> <span class="cn">FALSE</span>, <span class="at">trim_ws =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Selecionar colunas relevantes</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>colunas_interesse <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="st">"IDADE"</span>, <span class="st">"DTOBITO"</span>, <span class="st">"HORAOBITO"</span>, <span class="st">"RACACOR"</span>, <span class="st">"CODMUNRES"</span>, </span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="st">"ESTCIV"</span>, <span class="st">"LOCOCOR"</span>, <span class="st">"CODMUNOCOR"</span>, <span class="st">"ASSISTMED"</span>, <span class="st">"CAUSABAS"</span>, <span class="st">"NECROPSIA"</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>dados_filtrados <span class="ot">&lt;-</span> dados <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="fu">all_of</span>(colunas_interesse))</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Filtrar registros do Espírito Santo (códigos de município iniciados por '32')</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>dados_es <span class="ot">&lt;-</span> dados_filtrados <span class="sc">%&gt;%</span> </span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">startsWith</span>(<span class="fu">as.character</span>(CODMUNRES), <span class="st">"32"</span>))</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Filtrar registros com causas de acidente de trânsito (CID-10: V01 a V89)</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>dados_acidentes_transito <span class="ot">&lt;-</span> dados_es <span class="sc">%&gt;%</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">grepl</span>(<span class="st">"^V(0[1-9]|[1-7][0-9]|8[0-9])"</span>, CAUSABAS))</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Criar nova coluna com mês e ano do óbito</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>dados_acidentes_transito <span class="ot">&lt;-</span> dados_acidentes_transito <span class="sc">%&gt;%</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">MES_OBITO =</span> <span class="fu">format</span>(<span class="fu">dmy</span>(DTOBITO), <span class="st">"%Y-%m"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="análise-e-discussão-dos-resultados" class="level2">
+<h2 class="anchored" data-anchor-id="análise-e-discussão-dos-resultados">Análise e Discussão dos Resultados</h2>
+<p>A seguir, são apresentados os principais resultados obtidos a partir da análise dos dados sobre óbitos relacionados a acidentes de trânsito no estado do Espírito Santo, com base nas notificações do Sistema de Informação sobre Mortalidade (SIM) para o ano de 2024 até o mês de agosto. Os dados foram organizados e visualizados de forma a identificar padrões e tendências significativas que possam orientar políticas públicas de segurança no trânsito e saúde.</p>
+<section id="distribuição-dos-óbitos-por-acidente-de-trânsito-por-mês" class="level3">
+<h3 class="anchored" data-anchor-id="distribuição-dos-óbitos-por-acidente-de-trânsito-por-mês">Distribuição dos Óbitos por Acidente de Trânsito por Mês</h3>
+<p>Este gráfico mostra a quantidade de óbitos por acidentes de trânsito no estado do Espírito Santo, mês a mês, durante o ano de 2024. Ele ajuda a visualizar quais meses tiveram mais ou menos óbitos, o que pode ser útil para identificar padrões e apoiar ações de prevenção.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gráfico 1: Óbitos por mês</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>dados_acidentes_transito <span class="sc">%&gt;%</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(MES_OBITO) <span class="sc">%&gt;%</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_ly</span>(</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="sc">~</span>MES_OBITO,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="sc">~</span>n,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">type =</span> <span class="st">'scatter'</span>,</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">mode =</span> <span class="st">'lines+markers'</span>,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">line =</span> <span class="fu">list</span>(<span class="at">color =</span> <span class="st">'royalblue'</span>),</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">marker =</span> <span class="fu">list</span>(<span class="at">size =</span> <span class="dv">6</span>)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Óbitos por Acidente de Trânsito por Mês"</span>,</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Mês"</span>),</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Quantidade de Óbitos"</span>)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-a7d6fa5ecc346d35cfb7" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-a7d6fa5ecc346d35cfb7">{"x":{"visdat":{"1b0044c71be":["function () ","plotlyVisDat"]},"cur_data":"1b0044c71be","attrs":{"1b0044c71be":{"x":{},"y":{},"mode":"lines+markers","line":{"color":"royalblue"},"marker":{"size":6},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Óbitos por Acidente de Trânsito por Mês","xaxis":{"domain":[0,1],"automargin":true,"title":"Mês","type":"category","categoryorder":"array","categoryarray":["2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"Quantidade de Óbitos"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":["2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08"],"y":[51,59,65,70,94,73,45,10],"mode":"lines+markers","line":{"color":"royalblue"},"marker":{"color":"rgba(31,119,180,1)","size":6,"line":{"color":"rgba(31,119,180,1)"}},"type":"scatter","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="distribuição-dos-óbitos-por-estado-civil" class="level3">
+<h3 class="anchored" data-anchor-id="distribuição-dos-óbitos-por-estado-civil">Distribuição dos Óbitos por Estado Civil</h3>
+<p>O gráfico abaixo é um treemap que mostra a distribuição dos óbitos por acidentes de trânsito no estado do Espírito Santo, agrupados por estado civil das vítimas. Esse gráfico permite observar como os óbitos estão distribuídos entre os diferentes estados civis, o que pode oferecer insights valiosos para entender possíveis padrões relacionados ao estado civil das vítimas de acidentes de trânsito.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gráfico 2: Óbitos por Estado Civil (Treemap)</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>dados_acidentes_transito <span class="sc">%&gt;%</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">ESTCIV_LABEL =</span> <span class="fu">case_when</span>(</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    ESTCIV <span class="sc">==</span> <span class="st">"1"</span> <span class="sc">~</span> <span class="st">"Solteiro(a)"</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    ESTCIV <span class="sc">==</span> <span class="st">"2"</span> <span class="sc">~</span> <span class="st">"Casado(a)"</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    ESTCIV <span class="sc">==</span> <span class="st">"3"</span> <span class="sc">~</span> <span class="st">"Viúvo(a)"</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    ESTCIV <span class="sc">==</span> <span class="st">"4"</span> <span class="sc">~</span> <span class="st">"Separado(a)/Divorciado(a)"</span>,</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    ESTCIV <span class="sc">==</span> <span class="st">"5"</span> <span class="sc">~</span> <span class="st">"União estável"</span>,</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    ESTCIV <span class="sc">==</span> <span class="st">"9"</span> <span class="sc">~</span> <span class="st">"Ignorado"</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"Não informado"</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">%&gt;%</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(ESTCIV_LABEL) <span class="sc">%&gt;%</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_ly</span>(</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">type =</span> <span class="st">"treemap"</span>,</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> <span class="sc">~</span>ESTCIV_LABEL,</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">values =</span> <span class="sc">~</span>n,</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">parents =</span> <span class="cn">NA</span>,</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">textinfo =</span> <span class="st">"label+value"</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(<span class="at">title =</span> <span class="st">"Óbitos por Estado Civil"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-24fa871754becb74b2a8" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-24fa871754becb74b2a8">{"x":{"visdat":{"1b001b0725c6":["function () ","plotlyVisDat"]},"cur_data":"1b001b0725c6","attrs":{"1b001b0725c6":{"labels":{},"values":{},"parents":null,"textinfo":"label+value","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"treemap"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Óbitos por Estado Civil","hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"labels":["Casado(a)","Ignorado","Não informado","Separado(a)/Divorciado(a)","Solteiro(a)","União estável","Viúvo(a)"],"values":[131,12,39,31,222,19,13],"parents":[null,null,null,null,null,null,null],"textinfo":"label+value","type":"treemap","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(255,255,255,1)"}},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="distribuição-dos-óbitos-por-local-de-ocorrência" class="level3">
+<h3 class="anchored" data-anchor-id="distribuição-dos-óbitos-por-local-de-ocorrência">Distribuição dos Óbitos por Local de Ocorrência</h3>
+<p>O gráfico gerado representa a distribuição dos óbitos de acordo com o local de ocorrência. Cada fatia da pizza mostra a proporção de óbitos em diferentes locais, como hospitais, vias públicas, entre outros. Esse gráfico pode ser útil para entender onde ocorrem mais frequentemente os óbitos e direcionar ações de prevenção específicas para cada tipo de local.</p>
+<p>É importante observar essa distribuição, pois, quando o óbito ocorre em via pública, subentende-se que a vítima possivelmente não teve acesso oportuno à assistência médica.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gráfico 3: Local de ocorrência (Pizza)</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>dados_acidentes_transito <span class="sc">%&gt;%</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">LOCOCOR_LABEL =</span> <span class="fu">case_when</span>(</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    LOCOCOR <span class="sc">==</span> <span class="st">"1"</span> <span class="sc">~</span> <span class="st">"Hospital"</span>,</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    LOCOCOR <span class="sc">==</span> <span class="st">"2"</span> <span class="sc">~</span> <span class="st">"Outros estabelecimentos de saúde"</span>,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    LOCOCOR <span class="sc">==</span> <span class="st">"3"</span> <span class="sc">~</span> <span class="st">"Domicílio"</span>,</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    LOCOCOR <span class="sc">==</span> <span class="st">"4"</span> <span class="sc">~</span> <span class="st">"Via pública"</span>,</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    LOCOCOR <span class="sc">==</span> <span class="st">"5"</span> <span class="sc">~</span> <span class="st">"Outros"</span>,</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    LOCOCOR <span class="sc">==</span> <span class="st">"9"</span> <span class="sc">~</span> <span class="st">"Ignorado"</span>,</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"Não informado"</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">%&gt;%</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(LOCOCOR_LABEL) <span class="sc">%&gt;%</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_ly</span>(</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> <span class="sc">~</span>LOCOCOR_LABEL,</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">values =</span> <span class="sc">~</span>n,</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">type =</span> <span class="st">"pie"</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(<span class="at">title =</span> <span class="st">"Distribuição por Local de Ocorrência"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-220598b135aa6de31937" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-220598b135aa6de31937">{"x":{"visdat":{"1b0059d81c3e":["function () ","plotlyVisDat"]},"cur_data":"1b0059d81c3e","attrs":{"1b0059d81c3e":{"labels":{},"values":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"pie"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Distribuição por Local de Ocorrência","hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"labels":["Domicílio","Hospital","Ignorado","Outros","Outros estabelecimentos de saúde","Via pública"],"values":[6,173,2,40,11,235],"type":"pie","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(255,255,255,1)"}},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="situação-de-assistência-médica-nos-óbitos-por-acidente-de-trânsito" class="level3">
+<h3 class="anchored" data-anchor-id="situação-de-assistência-médica-nos-óbitos-por-acidente-de-trânsito">Situação de Assistência Médica nos Óbitos por Acidente de Trânsito</h3>
+<p>O gráfico mostra a situação de assistência médica nos óbitos por acidentes de trânsito no Espírito Santo. Ele destaca os casos em que houve ou não atendimento médico, além das situações com dados ignorados ou não informados. Esse dado é importante para entender a relação entre o socorro recebido e o desfecho dos casos.</p>
+<p>Assim como o gráfico anterior, este também sugere que óbitos em via pública, na maioria das vezes, indicam ausência de assistência médica, enquanto os ocorridos em hospitais apontam que houve algum atendimento. Ambos se complementam e reforçam a importância do socorro rápido.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gráfico 4: Assistência médica (Pizza)</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>dados_acidentes_transito <span class="sc">%&gt;%</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">ASSISTMED_LABEL =</span> <span class="fu">case_when</span>(</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    ASSISTMED <span class="sc">==</span> <span class="st">"1"</span> <span class="sc">~</span> <span class="st">"Recebeu assistência médica"</span>,</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    ASSISTMED <span class="sc">==</span> <span class="st">"2"</span> <span class="sc">~</span> <span class="st">"Não recebeu assistência médica"</span>,</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    ASSISTMED <span class="sc">==</span> <span class="st">"9"</span> <span class="sc">~</span> <span class="st">"Assistência médica ignorada"</span>,</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"Não informado"</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">%&gt;%</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(ASSISTMED_LABEL) <span class="sc">%&gt;%</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_ly</span>(</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> <span class="sc">~</span>ASSISTMED_LABEL,</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">values =</span> <span class="sc">~</span>n,</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">type =</span> <span class="st">"pie"</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(<span class="at">title =</span> <span class="st">"Situação de Assistência Médica nos Óbitos por Acidente de Trânsito"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-d60c3f34a2cdc46bca73" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-d60c3f34a2cdc46bca73">{"x":{"visdat":{"1b00531161ee":["function () ","plotlyVisDat"]},"cur_data":"1b00531161ee","attrs":{"1b00531161ee":{"labels":{},"values":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"pie"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Situação de Assistência Médica nos Óbitos por Acidente de Trânsito","hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"labels":["Assistência médica ignorada","Não informado","Não recebeu assistência médica","Recebeu assistência médica"],"values":[39,52,187,189],"type":"pie","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(255,255,255,1)"}},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="mapa---óbitos-por-município-de-ocorrência-no-es" class="level3">
+<h3 class="anchored" data-anchor-id="mapa---óbitos-por-município-de-ocorrência-no-es">Mapa - Óbitos por Município de Ocorrência no ES</h3>
+<p>O gráfico a seguir apresenta a distribuição espacial dos óbitos por acidentes de trânsito nos municípios do Espírito Santo. A visualização permite identificar as áreas com maior número de óbitos, o que pode contribuir para a definição de políticas públicas mais eficazes na promoção de segurança viária e prevenção de acidentes.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gráfico 5: Mapa - Óbitos por Município de Ocorrência no ES</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Filtrar registros com CODMUNOCOR iniciando em 32</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>dados_mapa <span class="ot">&lt;-</span> dados_acidentes_transito <span class="sc">%&gt;%</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">startsWith</span>(<span class="fu">as.character</span>(CODMUNOCOR), <span class="st">"32"</span>))</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Contar óbitos por município de ocorrência</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>dados_obitos_municipio <span class="ot">&lt;-</span> dados_mapa <span class="sc">%&gt;%</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(CODMUNOCOR) <span class="sc">%&gt;%</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">code_muni =</span> <span class="fu">as.numeric</span>(CODMUNOCOR))</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Carregar geometria dos municípios do Espírito Santo</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>municipios_es <span class="ot">&lt;-</span> <span class="fu">read_municipality</span>(<span class="at">code_muni =</span> <span class="dv">32</span>, <span class="at">year =</span> <span class="dv">2022</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Using year/date 2022</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Padronizar código do shapefile para os primeiros 6 dígitos</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>municipios_es <span class="ot">&lt;-</span> municipios_es <span class="sc">%&gt;%</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">code_muni =</span> <span class="fu">as.numeric</span>(<span class="fu">substr</span>(<span class="fu">as.character</span>(code_muni), <span class="dv">1</span>, <span class="dv">6</span>)))</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Filtrar registros com CODMUNOCOR iniciando em 32</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>dados_mapa <span class="ot">&lt;-</span> dados_acidentes_transito <span class="sc">%&gt;%</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">startsWith</span>(<span class="fu">as.character</span>(CODMUNOCOR), <span class="st">"32"</span>))</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Contar óbitos por município (padronizando também para 6 dígitos)</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>dados_obitos_municipio <span class="ot">&lt;-</span> dados_mapa <span class="sc">%&gt;%</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">code_muni =</span> <span class="fu">as.numeric</span>(<span class="fu">substr</span>(<span class="fu">as.character</span>(CODMUNOCOR), <span class="dv">1</span>, <span class="dv">6</span>))) <span class="sc">%&gt;%</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(code_muni)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Juntar com geometria</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>mapa_obitos <span class="ot">&lt;-</span> municipios_es <span class="sc">%&gt;%</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(dados_obitos_municipio, <span class="at">by =</span> <span class="st">"code_muni"</span>)</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotar o mapa</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> mapa_obitos) <span class="sc">+</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="fu">aes</span>(<span class="at">fill =</span> n), <span class="at">color =</span> <span class="st">"white"</span>, <span class="at">size =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_viridis_c</span>(</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">option =</span> <span class="st">"magma"</span>,</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">na.value =</span> <span class="st">"gray90"</span>,</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="st">"Óbitos"</span>,</span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">direction =</span> <span class="sc">-</span><span class="dv">1</span>,</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">guide =</span> <span class="fu">guide_colorbar</span>(<span class="at">barwidth =</span> <span class="fl">0.5</span>, <span class="at">barheight =</span> <span class="dv">10</span>)</span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Óbitos por Acidentes de Trânsito no Espírito Santo por Município"</span>,</span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Distribuição espacial dos óbitos registrados em 2024"</span></span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>() <span class="sc">+</span></span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="fu">c</span>(<span class="fl">0.9</span>, <span class="fl">0.3</span>),</span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend.justification =</span> <span class="st">"center"</span>,</span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">14</span>, <span class="at">hjust =</span> <span class="dv">0</span>),</span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">10</span>, <span class="at">hjust =</span> <span class="dv">0</span>),</span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.caption =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>, <span class="at">hjust =</span> <span class="dv">1</span>)</span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: A numeric `legend.position` argument in `theme()` was deprecated in ggplot2
+3.5.0.
+ℹ Please use the `legend.position.inside` argument of `theme()` instead.</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="relatorio_final_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="insights-da-análise-de-dados-e-do-projeto-como-um-todo" class="level2">
+<h2 class="anchored" data-anchor-id="insights-da-análise-de-dados-e-do-projeto-como-um-todo">Insights Da Análise de Dados e Do Projeto como um Todo</h2>
+<p>A análise realizada sobre os dados de acidentes de trânsito no Espírito Santo, com ênfase nos óbitos ocorridos em vias públicas, trouxe à tona uma série de insights importantes que podem contribuir para a formulação de estratégias de prevenção e melhorias nas políticas públicas de segurança viária. Destacam-se os seguintes pontos:</p>
+<section id="alta-gravidade-dos-acidentes-e-falta-de-assistência-médica" class="level3">
+<h3 class="anchored" data-anchor-id="alta-gravidade-dos-acidentes-e-falta-de-assistência-médica">1. Alta Gravidade dos Acidentes e Falta de Assistência Médica</h3>
+<p>A análise dos dados revelou que a maioria dos acidentes de trânsito no Espírito Santo resultam em lesões graves, com um número significativo de óbitos ocorrendo em vias públicas, sem que a vítima receba assistência médica a tempo. Implicações:</p>
+<ul>
+<li><p>A elevada gravidade dos acidentes destaca a necessidade urgente de melhorias na estrutura de atendimento emergencial, incluindo a ampliação da presença de unidades de resgate em pontos estratégicos e a melhoria da resposta dos serviços de emergência.</p></li>
+<li><p>A criação de corredores de ambulâncias e a capacitação de motoristas e cidadãos para a realização de primeiros socorros podem ser medidas importantes para reduzir a mortalidade nas vias públicas.</p></li>
+</ul>
+</section>
+<section id="predominância-de-solteiros-nas-estatísticas-de-vítimas" class="level3">
+<h3 class="anchored" data-anchor-id="predominância-de-solteiros-nas-estatísticas-de-vítimas">2. Predominância de Solteiros nas Estatísticas de Vítimas</h3>
+<p>Outro dado relevante foi a predominância de vítimas solteiras entre os óbitos registrados. Embora seja necessário realizar mais investigações para confirmar essa tendência, uma possível explicação pode estar relacionada à maior exposição a comportamentos de risco entre indivíduos jovens e solteiros, como o uso de álcool e velocidade excessiva. Tomada de decisão sugerida:</p>
+<ul>
+<li><p>Desenvolver campanhas de conscientização voltadas para o público jovem, especialmente em relação à condução responsável e ao uso adequado de equipamentos de segurança.</p></li>
+<li><p>Avaliar a viabilidade de políticas públicas que incentivem a redução do consumo de álcool e o aumento da fiscalização de infrações de trânsito em áreas com maior concentração de jovens.</p></li>
+</ul>
+</section>
+<section id="a-prevalência-de-acidentes-em-grandes-vias-e-avenidas" class="level3">
+<h3 class="anchored" data-anchor-id="a-prevalência-de-acidentes-em-grandes-vias-e-avenidas">3. A Prevalência de Acidentes em Grandes Vias e Avenidas</h3>
+<p>Ao trabalhar diretamente no setor responsável pelo processamento de dados, pude observar que a maior parte dos acidentes de trânsito ocorre em grandes vias e avenidas, como as BRs e outras rodovias importantes. A localização dos acidentes indica que as infraestruturas dessas vias, muitas vezes com alto tráfego e maior velocidade, representam um risco maior para os motoristas. Reflexão:</p>
+<ul>
+<li>Investir em fiscalização intensiva nas rodovias, com foco na velocidade e no uso de equipamentos de segurança, é essencial para prevenir acidentes graves nessas áreas.</li>
+</ul>
+</section>
+<section id="variabilidade-temporal-e-sazonal-dos-acidentes" class="level3">
+<h3 class="anchored" data-anchor-id="variabilidade-temporal-e-sazonal-dos-acidentes">4. Variabilidade Temporal e Sazonal dos Acidentes</h3>
+<p>A análise temporal apontou variações sazonais na incidência de acidentes de trânsito, sugerindo que fatores externos, como condições climáticas e períodos de férias ou feriados, podem influenciar o número de ocorrências. Reflexão:</p>
+<ul>
+<li>Investigações mais aprofundadas podem esclarecer a influência de fatores sazonais e eventuais picos de acidentes, permitindo a adequação de estratégias preventivas em períodos de maior risco, como feriados prolongados ou férias escolares.</li>
+</ul>
+</section>
+<section id="potencial-para-redução-de-mortalidade-por-meio-de-intervenções-simples" class="level3">
+<h3 class="anchored" data-anchor-id="potencial-para-redução-de-mortalidade-por-meio-de-intervenções-simples">5. Potencial para Redução de Mortalidade por Meio de Intervenções Simples</h3>
+<p>Os achados do estudo mostram que muitas mortes poderiam ser evitadas com a adoção de medidas simples, como o aumento da fiscalização, a melhoria do treinamento de motoristas e a aplicação mais rigorosa de medidas de segurança. Proposta de solução:</p>
+<ul>
+<li><p>Estabelecer campanhas de educação voltadas ao uso de equipamentos de segurança (como capacetes e cintos de segurança) e a condução responsável, com foco em áreas de maior risco, como rodovias e avenidas.</p></li>
+<li><p>Utilizar os dados obtidos para embasar investimentos em infraestrutura viária, especialmente em locais de alta incidência de acidentes, como rotatórias, cruzamentos e saídas de grandes vias.</p></li>
+</ul>
+</section>
+</section>
+<section id="considerações-finais" class="level2">
+<h2 class="anchored" data-anchor-id="considerações-finais">Considerações Finais</h2>
+<p>Este projeto demonstrou como a análise de dados de acidentes de trânsito pode oferecer insights valiosos para a formulação de estratégias de prevenção e políticas públicas de segurança viária. Através da exploração de padrões geográficos, temporais e demográficos, foi possível:</p>
+<ul>
+<li><p>Mapear as regiões de maior incidência de acidentes fatais e identificar as principais vias de risco, como as BRs e grandes avenidas.</p></li>
+<li><p>Identificar a importância de intervenções no comportamento dos motoristas e na infraestrutura das rodovias, com o objetivo de reduzir as fatalidades.</p></li>
+<li><p>Propor a implementação de campanhas educativas e investimentos em segurança viária, a fim de reduzir significativamente o número de óbitos.</p></li>
+</ul>
+<section id="contribuições-do-projeto" class="level3">
+<h3 class="anchored" data-anchor-id="contribuições-do-projeto">Contribuições do Projeto:</h3>
+<ul>
+<li><p><strong>Subsídio para Políticas Públicas:</strong> Os dados obtidos fornecem informações essenciais que podem orientar gestores e formuladores de políticas na criação de estratégias para minimizar os acidentes e suas consequências graves.</p></li>
+<li><p><strong>Aprimoramento da Assistência e Infraestrutura Viária:</strong> As recomendações derivadas da análise podem auxiliar na melhoria da infraestrutura rodoviária e nos protocolos de atendimento emergencial, promovendo uma resposta mais eficiente em situações de acidente.</p></li>
+<li><p><strong>Fomento à Pesquisa e à Melhoria Contínua:</strong> O projeto destaca a importância da vigilância constante e da análise de dados de acidentes de trânsito como ferramentas cruciais para a redução de óbitos e para a promoção de uma mobilidade mais segura.</p></li>
+</ul>
+</section>
+<section id="conclusão" class="level3">
+<h3 class="anchored" data-anchor-id="conclusão">Conclusão</h3>
+<p>Em resumo, a análise de dados dos acidentes de trânsito no Espírito Santo reforça a necessidade de ações integradas entre gestores, profissionais da saúde e a comunidade para a prevenção de óbitos. A implementação de medidas de segurança viária, incluindo campanhas educativas e melhorias na infraestrutura, é essencial para evitar acidentes fatais e promover um trânsito mais seguro e humano.</p>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
