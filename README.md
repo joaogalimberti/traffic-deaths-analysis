@@ -1,260 +1,671 @@
-# 🚨 **Fatal Roads: Mapping Tragedy to Transform Tomorrow**
-
-> *"Behind every statistic lies a story cut short, a family forever changed, a community scarred. This analysis doesn't just count lives lost on Espírito Santo's roads - it illuminates the path toward prevention, turning data into a beacon of hope for safer tomorrows."*
-
+<!-- Hero Section -->
 <div align="center">
 
-![Status](https://img.shields.io/badge/status-🚨%20Critical%20Analysis-warning?style=for-the-badge)
-![Platform](https://img.shields.io/badge/platform-📊%20R%20/%20Quarto-blue?style=for-the-badge)  
-![Institution](https://img.shields.io/badge/institution-🏥%20ICEPi%20Module%202-purple?style=for-the-badge)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,3,5,6&height=280&section=header&text=🚨%20Fatal%20Roads&fontSize=80&fontColor=fff&animation=fadeIn&fontAlignY=40"/>
 
-**🏆 Advanced Data Analysis - Public Health Impact Assessment**
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=DC143C&center=true&vCenter=true&repeat=true&width=900&height=100&lines=Mapping+Tragedy+to+Transform+Tomorrow+🛣️;Data-Driven+Prevention+Strategies+📊;Every+Statistic+Tells+a+Story+💔;Turning+Analysis+into+Action+🚀" alt="Typing SVG" />
+
+<br><br>
+
+![Status](https://img.shields.io/badge/Status-Critical_Analysis-critical?style=for-the-badge&logo=statuspage)
+![Platform](https://img.shields.io/badge/Platform-R_|_Quarto-blue?style=for-the-badge&logo=r)
+![Institution](https://img.shields.io/badge/Institution-ICEPi_Module_2-purple?style=for-the-badge&logo=academicapple)
+![Impact](https://img.shields.io/badge/Impact-Public_Health-red?style=for-the-badge&logo=heart)
+
+<br>
+
+**Advanced epidemiological analysis transforming mortality data into life-saving insights**
+
+[💔 The Crisis](#-the-human-cost) • [🗺️ Discoveries](#️-key-discoveries) • [🛠️ Technologies](#️-technologies) • [📊 Insights](#-critical-insights) • [🚀 Impact](#-real-world-impact)
 
 </div>
 
 ---
 
-## 🌟 **When Data Becomes a Lifeline**
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-What started as **Module 2's final assignment** evolved into a **urgent call for action.**
-
-*What if we could predict where the next tragedy might strike?* What if every visualization could prevent a family from losing a loved one? **Fatal Roads** transforms cold mortality statistics into a powerful narrative of prevention, revealing how Espírito Santo can break the cycle of preventable deaths on our highways.
-
-<div align="center">
-
-*[Include a compelling heat map visualization showing accident hotspots]*
-
-*Every red dot represents a life lost - but also an opportunity to save the next one*
-
-</div>
-
----
-
-## 💔 **The Human Cost Behind the Numbers**
+<!-- Project Overview -->
+## 💡 **When Data Becomes a Lifeline**
 
 <table>
 <tr>
-<td width="50%">
+<td width="60%">
 
-### 🚨 **The Stark Reality**
-*"Every 8 months, Espírito Santo loses dozens to preventable accidents"*
+### 🎯 **The Mission**
 
-**📊 The Devastating Statistics**
-- **January-August 2024**: Hundreds of lives lost
-- **Prime victims**: Young, economically active citizens
-- **Geographic hotspots**: Specific municipalities crying for help
-- **Time patterns**: Deadly seasonal peaks revealed
+What started as **Module 2's final assignment** evolved into an **urgent call for action.**
 
-**⚠️ The Crisis**
-Traffic accidents represent a **silent epidemic** claiming our state's most productive citizens, devastating families, and straining healthcare systems.
+This project analyzes **traffic mortality data** from Espírito Santo (Brazil) to uncover patterns, identify risk factors, and propose **evidence-based prevention strategies** that can save lives.
+
+> *"Behind every statistic lies a story cut short, a family forever changed. This analysis illuminates the path toward prevention, turning data into a beacon of hope for safer tomorrows."*
+
+**Key Question:** *What if we could predict where the next tragedy might strike?*
 
 </td>
-<td width="50%">
+<td width="40%">
 
-### 💡 **The Data-Driven Solution**
-*"From tragedy to transformation through intelligent analysis"*
-
-**🎯 What We Uncovered**
-- **Risk profiles** of most vulnerable populations
-- **Geographic patterns** revealing danger zones
-- **Temporal trends** showing when disasters strike
-- **Emergency response gaps** where lives could be saved
-
-**🏆 The Mission**
-Transform mortality data into **actionable prevention strategies** that save lives before they're lost.
+<img src="https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" width="100%">
 
 </td>
 </tr>
 </table>
 
----
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-## 🗺️ **Anatomy of a Tragedy: Key Discoveries**
+<!-- The Crisis -->
+## 💔 **The Human Cost**
+
+<div align="center">
+
+### **The Silent Epidemic**
+
+<table>
+<tr>
+<td align="center" width="25%">
+
+### 📊 **Period**
+<img src="https://img.shields.io/badge/Jan--Aug_2024-8_months-orange?style=flat-square" />
+
+Comprehensive analysis of mortality patterns
+
+</td>
+<td align="center" width="25%">
+
+### 👥 **Victims**
+<img src="https://img.shields.io/badge/Young_Adults-20--40_years-red?style=flat-square" />
+
+Prime of life, economically active citizens
+
+</td>
+<td align="center" width="25%">
+
+### 🗺️ **Hotspots**
+<img src="https://img.shields.io/badge/Risk_Zones-Identified-critical?style=flat-square" />
+
+Geographic patterns revealed through data
+
+</td>
+<td align="center" width="25%">
+
+### ⏰ **Patterns**
+<img src="https://img.shields.io/badge/Seasonal_Peaks-Detected-yellow?style=flat-square" />
+
+Temporal trends showing when disasters strike
+
+</td>
+</tr>
+</table>
+
+</div>
+
+### 🚨 **The Stark Reality**
+
+<table>
+<tr>
+<td width="50%">
+
+#### **What We're Losing**
+- 🏥 **Healthcare System Strain**: Overwhelming emergency services
+- 💰 **Economic Impact**: Loss of productive workforce
+- 👨‍👩‍👧‍👦 **Family Devastation**: Countless lives forever changed
+- 🏛️ **Social Cost**: Communities scarred by preventable tragedies
+
+</td>
+<td width="50%">
+
+#### **What We Can Gain**
+- 📍 **Targeted Prevention**: Data-driven intervention zones
+- 🚨 **Optimized Response**: Strategic emergency deployment
+- 📢 **Effective Campaigns**: Evidence-based awareness programs
+- 🛣️ **Infrastructure Priorities**: Smart resource allocation
+
+</td>
+</tr>
+</table>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<!-- Key Discoveries -->
+## 🗺️ **Key Discoveries**
+
+<div align="center">
+
+### **Uncovering Patterns in Tragedy**
+
+</div>
+
+### 📊 **Analytical Framework**
+
+```mermaid
+graph LR
+    A[📁 SIM Data] -->|Extract| B[🧹 Clean & Process]
+    B -->|ICD-10 V01-V89| C[🔍 Pattern Analysis]
+    C -->|Demographics| D[👤 Victim Profiles]
+    C -->|Geographic| E[🗺️ Risk Mapping]
+    C -->|Temporal| F[⏰ Time Patterns]
+    D --> G[📊 Insights]
+    E --> G
+    F --> G
+    G --> H[🎯 Prevention Strategies]
+    
+    style A fill:#DC143C,stroke:#8B0000,color:#fff
+    style B fill:#FF6347,stroke:#DC143C,color:#fff
+    style C fill:#FFA500,stroke:#FF8C00,color:#fff
+    style G fill:#32CD32,stroke:#228B22,color:#fff
+    style H fill:#4169E1,stroke:#0000CD,color:#fff
+```
+
+### 🎯 **Three Pillars of Analysis**
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+### 👤 **Demographics**
+
+**Who are we losing?**
+
+- 💍 Marital status patterns
+- 👨‍💼 Age distribution analysis
+- 📈 Risk factor identification
+- 🎯 Vulnerable population profiles
+
+</td>
+<td width="33%" align="center">
+
+### 🗺️ **Geography**
+
+**Where do tragedies occur?**
+
+- 📍 Municipal hotspot mapping
+- 🛣️ Dangerous road corridors
+- 🏥 Emergency response gaps
+- 📊 Resource allocation priorities
+
+</td>
+<td width="33%" align="center">
+
+### ⏰ **Temporal**
+
+**When do disasters strike?**
+
+- 📅 Seasonal vulnerability peaks
+- 🎄 Holiday month spikes
+- ⏱️ Hour-by-hour risk analysis
+- 📉 Trend identification
+
+</td>
+</tr>
+</table>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<!-- Technologies -->
+## 🛠️ **Technologies**
+
+<div align="center">
+
+### **Data Science Arsenal**
+
+<table>
+<tr>
+<td align="center" width="20%">
+<img src="https://skillicons.dev/icons?i=r" width="80"/><br>
+<b>R Language</b><br>
+<sub>Statistical Computing</sub>
+</td>
+<td align="center" width="20%">
+<img src="https://raw.githubusercontent.com/tidyverse/ggplot2/main/man/figures/logo.png" width="80"/><br>
+<b>ggplot2</b><br>
+<sub>Data Visualization</sub>
+</td>
+<td align="center" width="20%">
+<img src="https://plotly.com/all_static/images/plotly-logo.png" width="80"/><br>
+<b>Plotly</b><br>
+<sub>Interactive Dashboards</sub>
+</td>
+<td align="center" width="20%">
+<img src="https://raw.githubusercontent.com/ipeaGIT/geobr/master/r-package/man/figures/geobr_logo_b.png" width="80"/><br>
+<b>geobr</b><br>
+<sub>Geospatial Analysis</sub>
+</td>
+<td align="center" width="20%">
+<img src="https://quarto.org/quarto.png" width="80"/><br>
+<b>Quarto</b><br>
+<sub>Scientific Reporting</sub>
+</td>
+</tr>
+</table>
+
+### 📦 **Key Packages**
+
+![dplyr](https://img.shields.io/badge/dplyr-Data_Manipulation-blue?style=for-the-badge&logo=r)
+![lubridate](https://img.shields.io/badge/lubridate-Date_Processing-green?style=for-the-badge&logo=r)
+![sf](https://img.shields.io/badge/sf-Spatial_Features-orange?style=for-the-badge&logo=r)
+![tidyverse](https://img.shields.io/badge/tidyverse-Data_Science-purple?style=for-the-badge&logo=r)
+
+</div>
+
+### 🏗️ **Analysis Pipeline**
+
+<div align="center">
+
+```
+┌─────────────────────────────────────────────────────────┐
+│           📊 SIM Mortality Database (DATASUS)           │
+│              (ICD-10 V01-V89 Classification)            │
+└─────────────────────────────────────────────────────────┘
+                           │
+                           ▼
+┌─────────────────────────────────────────────────────────┐
+│                   🧹 Data Cleaning                       │
+│          • Missing value handling                        │
+│          • ICD code validation                           │
+│          • Date standardization                          │
+└─────────────────────────────────────────────────────────┘
+                           │
+        ┌──────────────────┼──────────────────┐
+        ▼                  ▼                  ▼
+┌───────────────┐  ┌───────────────┐  ┌───────────────┐
+│ Demographics  │  │   Geographic  │  │   Temporal    │
+│   Analysis    │  │   Mapping     │  │   Patterns    │
+│               │  │               │  │               │
+│ • Age/Sex     │  │ • Municipality│  │ • Seasonality │
+│ • Marital     │  │ • Road types  │  │ • Time trends │
+└───────────────┘  └───────────────┘  └───────────────┘
+        │                  │                  │
+        └──────────────────┼──────────────────┘
+                           ▼
+┌─────────────────────────────────────────────────────────┐
+│              📈 Interactive Visualizations               │
+│        • Heat maps • Time series • Bar charts           │
+└─────────────────────────────────────────────────────────┘
+                           │
+                           ▼
+┌─────────────────────────────────────────────────────────┐
+│           🎯 Prevention Strategy Recommendations         │
+└─────────────────────────────────────────────────────────┘
+```
+
+</div>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<!-- Critical Insights -->
+## 📊 **Critical Insights**
+
+<div align="center">
+
+### **Life-Saving Discoveries**
+
+| Finding | Impact | Recommended Action |
+|---------|--------|--------------------|
+| **70% deaths on public roads** | 🚨 Emergency response gaps | Deploy mobile medical units in hotspots |
+| **Peak in holiday months** | 📅 Seasonal risk patterns | Intensify campaigns December-January |
+| **High-risk municipalities** | 🗺️ Geographic concentration | Priority infrastructure investment |
+| **Young adult vulnerability** | 💼 Economic workforce loss | Targeted driver education programs |
+| **Weekend death spikes** | ⏰ Temporal clustering | Enhanced weekend patrol coverage |
+
+</div>
 
 ### 🎯 **Victim Profile Analysis**
-*"Understanding who we're losing to understand who we can save"*
 
-#### 👤 **Demographics of Loss**
-- **💍 Marital Status Patterns**: Single individuals face highest risk
-- **👨‍💼 Age Distribution**: Young adults (20-40) most vulnerable  
-- **📅 Seasonal Vulnerability**: Holiday months show deadly spikes
-- **🏥 Location of Death**: Public roads claim most lives
+<table>
+<tr>
+<td width="50%">
 
-### 📍 **Geographic Risk Mapping**
-*"Some roads are deadlier than others - now we know which ones"*
+#### **Demographics of Loss**
+- 👨‍💼 **Age Range**: 20-40 years (highest risk)
+- 💍 **Marital Status**: Single individuals overrepresented
+- 🚗 **Death Location**: Public highways dominate
+- ⏰ **Time Distribution**: Late night/early morning peaks
 
-#### 🗺️ **Municipal Hotspots**
-- **🔴 High-Risk Zones**: Specific municipalities with disproportionate fatalities
-- **🛣️ Dangerous Corridors**: Highway segments requiring immediate intervention
-- **🏥 Response Gaps**: Areas with inadequate emergency medical coverage
-- **📊 Resource Allocation**: Data-driven priority mapping for safety investments
+</td>
+<td width="50%">
 
-### ⏰ **Temporal Pattern Recognition**
-*"Timing can be the difference between life and death"*
+#### **Geographic Patterns**
+- 🔴 **Critical Zones**: Specific municipalities identified
+- 🛣️ **Dangerous Corridors**: Highway segments mapped
+- 🏥 **Response Gaps**: Areas lacking emergency coverage
+- 📊 **Investment Priorities**: Data-driven resource allocation
 
----
+</td>
+</tr>
+</table>
 
-## 🛠️ **Technical Arsenal for Saving Lives**
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-<div align="center">
-
-### **⚡ Data Science Stack**
-
-![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
-![ggplot2](https://img.shields.io/badge/ggplot2-E69F00?style=for-the-badge&logo=r&logoColor=white)
-![plotly](https://img.shields.io/badge/plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
-![geobr](https://img.shields.io/badge/geobr-228B22?style=for-the-badge&logo=r&logoColor=white)
-![SIM](https://img.shields.io/badge/SIM%20Data-DC143C?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9zdmc+&logoColor=white)
-
-</div>
-
-### 🏗️ **Analysis Pipeline Architecture**
-
-- **🔍 Data Extraction**: SIM mortality system integration
-- **🧹 Data Cleansing**: ICD-10 V01-V89 classification focus
-- **📊 Pattern Recognition**: Multi-dimensional risk analysis
-- **🗺️ Geospatial Mapping**: Municipal risk visualization
-- **📈 Interactive Dashboards**: Dynamic insight exploration
-- **📝 Policy Recommendations**: Actionable intervention strategies
-
----
-
-## 🎯 **Life-Saving Insights & Recommendations**
+<!-- Getting Started -->
+## 🚀 **Getting Started**
 
 <div align="center">
 
-### **🚨 Critical Findings**
-
-| Discovery | Impact | Recommended Action |
-|-----------|--------|--------------------|
-| **70% deaths on public roads** | Emergency response gaps | Deploy mobile medical units |
-| **Peak in holiday months** | Seasonal risk patterns | Intensify campaigns Dec-Jan |
-| **High-risk municipalities** | Geographic concentration | Priority infrastructure investment |
-| **Young adult vulnerability** | Economic impact | Targeted education programs |
+### **Replicate the Analysis**
 
 </div>
 
-### 🎓 **Skills Forged in Crisis Analysis**
+### 📋 **Prerequisites**
 
-> **"This project didn't just teach me data analysis - it taught me how to transform tragedy into prevention, how to find hope in heartbreak, and how to use statistics as a tool for saving lives."**
-
-- 📊 **Advanced R Mastery**: Complex mortality data manipulation
-- 🗺️ **Geospatial Analysis**: Municipal risk mapping expertise  
-- 📈 **Interactive Visualization**: Plotly dashboard creation
-- 🏥 **Epidemiological Methods**: Public health pattern recognition
-- 📋 **Policy Translation**: Converting insights to actionable recommendations
-
----
-
-## 🚀 **Implementing Change**
-
-### **📋 Prerequisites for Analysis**
 ```r
-# Critical R packages for life-saving analysis
+# Install required packages
 install.packages(c(
-  "ggplot2",    # Visual storytelling
-  "plotly",     # Interactive insights  
-  "dplyr",      # Data manipulation
-  "geobr",      # Brazilian geospatial data
-  "lubridate"   # Temporal analysis
+  "ggplot2",      # Data visualization
+  "plotly",       # Interactive graphics
+  "dplyr",        # Data manipulation
+  "geobr",        # Brazilian spatial data
+  "lubridate",    # Date-time handling
+  "sf",           # Spatial features
+  "tidyverse"     # Data science toolkit
 ))
-
-# SIM data access via OpenDataSUS
-# Geospatial processing capabilities
-# Quarto environment for reporting
 ```
 
-### **🎮 Quick Start Analysis**
+### 🎮 **Quick Start**
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+### 1️⃣ **Clone**
+
 ```bash
-# Clone the life-saving repository
-git clone https://github.com/joaogalimberti/traffic-deaths-analysis.git
-
-# Navigate to prevention
-cd traffic-deaths-analysis
-
-# Open analysis environment
-# Load SIM data pipeline
-# Generate intervention recommendations
+git clone https://github.com/
+joaogalimberti/
+fatal-roads-analysis.git
 ```
 
----
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
 
-## 🏥 **From Analysis to Action**
+</td>
+<td width="33%" align="center">
 
-### **🌟 ICEPi Module 2 Excellence**
-- **🏆 Advanced Project** - Health Data Analysis Training
-- **👨‍🏫 Instructor Recognition** for policy impact potential
-- **📊 Methodology Innovation** in mortality pattern analysis
-- **🎯 Real-World Application** of preventive epidemiology
+### 2️⃣ **Setup**
 
-### **🎯 Public Policy Impact Potential**
+```bash
+cd fatal-roads-analysis
+
+# Open R environment
+# Load required packages
+```
+
+<img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" />
+
+</td>
+<td width="33%" align="center">
+
+### 3️⃣ **Analyze**
+
+```bash
+# Run analysis scripts
+# Generate visualizations
+# Review insights
+```
+
+<img src="https://img.shields.io/badge/Analysis-Ready-success?style=for-the-badge&logo=chartdotjs" />
+
+</td>
+</tr>
+</table>
+
+### 📊 **Data Source**
 
 <div align="center">
 
-[![Emergency Services](https://img.shields.io/badge/Emergency_Services-Optimization-red?style=for-the-badge&logo=medical&logoColor=white)](http://www2.datasus.gov.br/DATASUS/index.php)
-[![Traffic Safety](https://img.shields.io/badge/Traffic_Safety-Enhancement-orange?style=for-the-badge&logo=road&logoColor=white)](https://www.icepi.es.gov.br/)
-[![Prevention](https://img.shields.io/badge/Prevention_Programs-Development-green?style=for-the-badge&logo=shield&logoColor=white)](https://github.com/joaogalimberti)
+**SIM - Mortality Information System (DATASUS)**
+
+[![DATASUS](https://img.shields.io/badge/Data_Source-SIM_/_DATASUS-red?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=)](http://www2.datasus.gov.br/DATASUS/index.php)
+
+*Brazil's definitive public health mortality database*
+
+**Classification:** ICD-10 V01-V89 (Transport Accidents)
+
+</div>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<!-- Real World Impact -->
+## 🌍 **Real-World Impact**
+
+<div align="center">
+
+### **From Analysis to Action**
+
+</div>
+
+<table>
+<tr>
+<td width="50%">
+
+### 🎓 **Academic Excellence**
+
+**ICEPi - Health Data Analysis Module 2**
+
+- 🏆 **Advanced Project Recognition**
+- 👨‍🏫 **Instructor Commendation** for methodology
+- 📊 **Innovative Approach** to mortality analysis
+- 🎯 **Real-World Application** potential
+
+**Skills Developed:**
+- Advanced R programming
+- Geospatial analysis techniques
+- Interactive data visualization
+- Epidemiological pattern recognition
+- Policy recommendation translation
+
+</td>
+<td width="50%">
+
+### 💼 **Policy Applications**
+
+**Prevention Strategy Development**
+
+- 🚨 **Emergency Services**: Optimized deployment
+- 🛣️ **Infrastructure**: Data-driven improvements
+- 📢 **Public Awareness**: Targeted campaigns
+- 🏥 **Healthcare**: Resource allocation
+- 🎓 **Education**: Evidence-based training
+
+**Impact Potential:**
+- Reduce preventable deaths
+- Improve emergency response times
+- Optimize public health spending
+- Inform traffic safety legislation
+- Guide community interventions
+
+</td>
+</tr>
+</table>
+
+### 🎯 **Prevention Framework**
+
+<div align="center">
+
+```mermaid
+graph TD
+    A[📊 Data Analysis] --> B[🎯 Risk Identification]
+    B --> C[📍 Hotspot Mapping]
+    B --> D[👥 Profile Recognition]
+    B --> E[⏰ Pattern Detection]
+    
+    C --> F[🚨 Emergency Optimization]
+    D --> G[📢 Targeted Campaigns]
+    E --> H[🛣️ Infrastructure Priority]
+    
+    F --> I[💚 Lives Saved]
+    G --> I
+    H --> I
+    
+    style A fill:#DC143C,stroke:#8B0000,color:#fff
+    style B fill:#FF6347,stroke:#DC143C,color:#fff
+    style I fill:#32CD32,stroke:#228B22,color:#fff
+```
+
+</div>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<!-- Learning Outcomes -->
+## 📚 **What This Project Teaches**
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="50%">
+
+### 💻 **Technical Skills**
+
+- 📊 **R Programming**: Advanced statistical analysis
+- 🗺️ **Geospatial Analysis**: Municipal risk mapping
+- 📈 **Data Visualization**: Interactive dashboards
+- 🔍 **Pattern Recognition**: Epidemiological methods
+- 📝 **Scientific Reporting**: Quarto documentation
+
+</td>
+<td align="center" width="50%">
+
+### 🎯 **Professional Competencies**
+
+- 🏥 **Public Health Analysis**: Real-world impact
+- 📋 **Policy Translation**: Actionable recommendations
+- 💡 **Problem Solving**: Evidence-based strategies
+- 🤝 **Stakeholder Communication**: Clear insights
+- 🌍 **Social Responsibility**: Data for good
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<!-- Resources -->
+## 📖 **Resources & References**
+
+<div align="center">
+
+### **Research Foundation**
+
+| Resource | Description | Link |
+|----------|-------------|------|
+| 🏥 **ICEPi** | Health Data Analysis Training | [Website](https://www.icepi.es.gov.br/) |
+| 📊 **DATASUS** | Brazilian Health Data Portal | [Access](http://www2.datasus.gov.br/) |
+| 🗺️ **geobr** | Brazilian Spatial Data | [GitHub](https://github.com/ipeaGIT/geobr) |
+| 📚 **ICD-10** | Classification System | [WHO](https://icd.who.int/) |
+| 📈 **R Documentation** | Statistical Computing | [CRAN](https://cran.r-project.org/) |
+
+</div>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<!-- Philosophy -->
+## 💭 **Project Philosophy**
+
+<div align="center">
+
+> *"This project taught me that the most important analyses aren't just about finding patterns - they're about preventing tragedies. Every visualization represents an opportunity to save a life, comfort a family, and strengthen a community."*
+
+### **Core Values**
+
+</div>
+
+<table>
+<tr>
+<td align="center" width="25%">
+
+### 💚 **Lives First**
+
+Every insight measured by prevention potential
+
+</td>
+<td align="center" width="25%">
+
+### 🔬 **Evidence-Based**
+
+Rigorous methodology for reliable recommendations
+
+</td>
+<td align="center" width="25%">
+
+### 🌍 **Community Impact**
+
+Data serving public safety over academic exercise
+
+</td>
+<td align="center" width="25%">
+
+### ⚖️ **Ethical Responsibility**
+
+Transforming tragedy into prevention opportunity
+
+</td>
+</tr>
+</table>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<!-- Contributing -->
+## 🤝 **Contributing**
+
+<div align="center">
+
+**Contributions to improve prevention strategies are welcome!**
+
+</div>
+
+```bash
+# 1. Fork the repository
+# 2. Create a feature branch
+git checkout -b feature/ImprovedAnalysis
+
+# 3. Commit your changes
+git commit -m 'feat: Add new risk factor analysis'
+
+# 4. Push to the branch
+git push origin feature/ImprovedAnalysis
+
+# 5. Open a Pull Request
+```
+
+<div align="center">
+
+### **Ways to Contribute**
+
+| Area | Contribution Type |
+|------|-------------------|
+| 📊 **Analysis** | New statistical methods, improved visualizations |
+| 🗺️ **Geography** | Enhanced spatial analysis, additional regions |
+| 📝 **Documentation** | Better explanations, translated versions |
+| 🎯 **Recommendations** | Policy suggestions, intervention strategies |
+
+</div>
+
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<!-- Contact -->
+## 📬 **Contact**
+
+<div align="center">
+
+### **Questions? Suggestions? Let's Connect!**
+
+[![Email](https://img.shields.io/badge/Email-joaogalimberti@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:joaogalimberti@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-João_Galimberti-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/joaogalimberti/)
+[![GitHub](https://img.shields.io/badge/GitHub-joaogalimberti-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/joaogalimberti)
 
 </div>
 
 ---
 
-## 💡 **Transforming Data Into Lives Saved**
-
-### **🌍 Real-World Prevention Applications**
-- **🚨 Emergency Response**: Optimized ambulance deployment
-- **🛣️ Infrastructure Planning**: Data-driven road safety improvements  
-- **📢 Awareness Campaigns**: Targeted messaging for high-risk groups
-- **📊 Policy Evaluation**: Measuring intervention effectiveness
-- **🎓 Professional Training**: Evidence-based emergency medicine education
-- **🏥 Resource Allocation**: Strategic healthcare system strengthening
-
----
-
-## 📚 **Research Foundation & Methodology**
-
-<details>
-<summary>📖 <strong>Complete Analytical Framework</strong></summary>
-
-### **🏫 Academic Excellence**
-- 🎓 [ICEPi Health Data Analysis](https://www.icepi.es.gov.br/)
-  *Where data meets life-saving intervention*
-- 📊 [SIM - Mortality Information System](http://www2.datasus.gov.br/DATASUS/index.php?area=0205&id=6937)
-  *Brazil's definitive mortality database*
-- 🗺️ [Brazilian Geospatial Data](https://github.com/ipeaGIT/geobr)
-  *Mapping risk with precision*
-
-### **💻 Technical Mastery**
-- 🔧 [Advanced ggplot2 Techniques](https://ggplot2.tidyverse.org/)
-- 📊 [Interactive Plotly Dashboards](https://plotly.com/r/)
-- 📝 [Quarto Scientific Reporting](https://quarto.org/)
-- 🏥 [ICD-10 Classification System](https://icd.who.int/browse10/2019/en)
-
-</details>
-
----
-
-## 🎭 **The Deeper Mission**  
-
-> *"Fatal Roads taught me that the most important analyses aren't just about finding patterns - they're about preventing tragedies. Every visualization in this project represents an opportunity to save a life, comfort a family, and strengthen a community. This project transformed me from someone who analyzes mortality data to someone who fights for prevention through data."*
-
-### **🎨 Analysis Philosophy**
-- **Lives First**: Every insight measured by prevention potential
-- **Evidence-Based Action**: Rigorous methodology for reliable recommendations  
-- **Community Impact**: Data serving public safety above academic exercise
-- **Ethical Responsibility**: Transforming tragedy into prevention opportunity
-
-**🚨 Forged with data and determination by [João Vitor Galimberti Contarato](https://github.com/joaogalimberti)**
-
-*A prevention-focused mission born from ICEPi Health Data Analysis Training | 2024*
-
----
-
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/joaogalimberti)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/joaogalimberti)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:joaogalimberti@gmail.com)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,3,5,6&height=150&section=footer"/>
 
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=DC143C&center=true&vCenter=true&width=800&lines=🚨+Every+analysis+is+an+opportunity+to+save+lives;💔+From+tragedy+to+transformation+through+data;📊+Making+roads+safer%2C+one+insight+at+a+time" alt="Footer" />
+
+**Developed with 💚 by [João Galimberti](https://github.com/joaogalimberti) | ICEPi Health Data Analysis | 2024**
+
+*Transforming mortality data into prevention strategies*
 
 </div>
